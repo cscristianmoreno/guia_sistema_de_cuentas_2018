@@ -1,14 +1,14 @@
 # guia_sistema_de_cuentas_2018
 Guía de sistema de cuentas 2018
 
-# MÓDULOS REQUERIDOS
+# Módulos requeridos
 
 ```
 #include <sqlx>
 #include <amxmisc> 
 ```
 
-# DEFINIMOS LA BASE DE DATOS Y LA TABLA
+# Definimos la base de datos y la tabla
 
 ```
 // TABLA Y BASE DE DATOS
@@ -16,7 +16,7 @@ Guía de sistema de cuentas 2018
 #define SQL_DATABASE "SQL_DBTest" 
 ```
 
-# VARIABLES QUE SERÁN UTILIZADAS:
+# Variables que serán utilizadas
 
 ```
 new g_user_name[33][32]; // NOMBRE DEL USUARIO - SERÁ UNA CADENA DE 32 DÍGITOS.
@@ -34,7 +34,7 @@ new Handle:g_sql_connection; // Variable que abrirá conexión con la base de da
 new Handle:g_sql_htuple; // Variable que almacenará información de la conexión (No se conecta a la base de datos).
 ```
 
-# FUNCIONES AL COMIENZO DEL PLUGIN plugin_init():
+# Funciones al comienzo del plugin
 
 ```
 public plugin_init()
